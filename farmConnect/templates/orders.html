@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{%block content%}
+{% load i18n %}
+  <!--<ul class="nav nav-tabs">
+  <li class="active"><a href="#">All <span class="badge">5</a></li>
+  <li><a href="#">{% trans 'Accepted' %} <span class="badge">15</a></li>
+  <li><a href="#">{% trans 'Pending' %} <span class="badge">15</a></li>
+  <li><a href="#">{% trans 'Rejected' %} <span class="badge">10</a></li>
+</ul>-->
+   <div class="col-xs-12 col-md-12 col-sm-12 text-center">
+   <h2>{% trans 'Orders' %}</h2>
+    <table class="table">
+      <thead>
+       <tr>
+        <th>{% trans 'Category' %}</th>
+        <th>{% trans 'Produce' %}</th>
+        <th>{% trans 'Price' %}</th>
+        <th>{% trans 'Quantity' %}</th>
+        <th>{% trans 'Delivery Date&Time' %}</th>
+        {% if User.user_type == '1'%}
+        <th>{% trans 'Buyer' %}</th>
+        {% endif %}
+        {% if User.user_type == '2'%}
+        <th>{% trans 'Seller' %}</th>
+        {% endif %}
+        <th>{% trans 'Pickup Date&Time' %}</th>
+        <th></th>
+        </tr>
+      </thead>
+      <tbody>
+       {% for order in orders %}
+      <tr>
+        <td>{{order.bid.demand.produce.category.name}}</td>
+        <td>{{order.bid.demand.produce.name}}</td>
+        <td>{{order.bid.demand.price}}</td>
+        <td>{{order.bid.demand.quantity}}</td>
+        <td>{{order.bid.demand.delivery_datetime}}</td>
+        {% if User.user_type == '1'%}
+        <td>{{order.bid.demand.buyer}}</td>
+        {% endif %}
+        {% if User.user_type == '2'%}
+        <td>{{order.bid.seller}}</td>
+        {% endif %}
+        
+        <td>{{order.bid.pickup_datetime}}</td>
+        <td><a href="{% url 'delete_order' order.id %}" style="color: red;font-size: large;">&times;</a> </td>
+      </tr>
+      {% endfor %}
+       
+    </tbody>
+  </table>
+
+</div>
+{% endblock %}
+
+

@@ -1,0 +1,29 @@
+	{% load i18n %}
+	<div class="container">
+
+			<div class ="col-xs-12 col-sm-12 col-md-6 col-lg-6" onclick="window.location='/search-demands';">
+				<div class="panel panel-primary dashboard_items" >
+					<div class="panel-body dashboard_item"><span class="glyphicon glyphicon-list"></span> {% trans 'View  Demands' %}</div>
+				</div>
+			</div>
+			<div class ="col-xs-12 col-sm-12 col-md-6 col-lg-6" onclick="window.location='/bids';">
+				<div class="panel panel-primary dashboard_items">
+					<div class="panel-body dashboard_item"><i class="fa fa-balance-scale"></i> {% trans 'Existing Bids' %}</div>
+				</div>
+			</div>
+
+
+			<div class ="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+				<div class="panel panel-primary dashboard_items" onclick="window.location='/orders';">
+					<div class="panel-body dashboard_item"><span class="glyphicon glyphicon-list"></span> {% trans 'View Orders' %}</div>
+				</div>
+			</div>
+			<div class ="col-xs-12 col-sm-12 col-md-6 col-lg-6" onclick="window.location='/track-orders';">
+				<div class="panel panel-primary dashboard_items">
+					<div class="panel-body dashboard_item"><i class="fa fa-truck"></i> {% trans 'Track  Orders' %}</div>
+				</div>
+			</div>
+
+
+	</div>
+

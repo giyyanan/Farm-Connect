@@ -1,0 +1,79 @@
+{% extends "account.html" %}
+{% load i18n %}
+{% block accountpage %}
+<div class="modal-body">
+
+	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+		<form enctype="multipart/form-data" method="post" class="wall-lg">
+			<div class ="form-group">
+				<div class="row">
+					{{ form.door_no }}
+				</div>
+				<h4 class="text-danger" style="color: red">{{ form.door_no.errors }}</h4>
+			</div>
+			<div class ="form-group">
+				<div class="row">
+					{{ form.street }}
+				</div>
+				<h4 class="text-danger" style="color: red">{{ form.street.errors }}</h4>
+			</div>
+			<div class ="form-group">
+				<div class="row">
+					{{ form.village }}
+				</div>
+				<h4 class="text-danger" style="color: red">{{ form.village.errors }}</h4>
+			</div>
+			<div class ="form-group">
+				<div class="row">
+					{{ form.town }}
+				</div>
+				<h4 class="text-danger" style="color: red">{{ form.town.errors }}</h4>
+			</div>
+			<div class ="form-group">
+				<div class="row">
+					{{ form.city }}
+				</div>
+				<h4 class="text-danger" style="color: red">{{ form.city.errors }}</h4>
+			</div>
+			<div class ="form-group">
+				<div class="row">
+					{{ form.state}}
+				</div>
+				<h4 class="text-danger" style="color: red">{{ form.state.errors }}</h4>
+			</div>
+			<div class ="form-group">
+				<div class="row">
+					{{ form.pincode }}
+				</div>
+				<h4 class="text-danger" style="color: red">{{ form.pincode.errors }}</h4>
+			</div>
+			{%if not User.address %}
+			<input class="btn btn-primary" type="submit" value="{% trans 'Add' %}">
+			{% else %}
+			<input class="btn btn-primary" type="submit" value="{% trans 'Update' %}">
+			<!--<input class="btn btn-primary" type="button" value="{%trans 'Save Location' %}" onclick="storeLocation()">-->
+			{% endif %}
+			{% csrf_token %}
+		</form>
+	</div>
+	{%if User.address %}
+		<script>
+		document.getElementById("id_door_no").value = "{{User.address.door_no}}"
+		document.getElementById("id_street").value = "{{User.address.street}}"
+		document.getElementById("id_village").value = "{{User.address.village}}"
+		document.getElementById("id_town").value = "{{User.address.town}}"
+		document.getElementById("id_city").value = "{{User.address.city}}"
+		document.getElementById("id_state").value = "{{User.address.state}}"
+		document.getElementById("id_pincode").value = "{{User.address.pincode}}"
+		geocodeFromAdress("{{User.address.door_no}},{{User.address.street}},{{User.address.village}},{{User.address.town}},{{User.address.city}},{{User.address.state}},{{User.address.pincode}}")
+		</script>
+	{% else %}
+	<script>
+		getCurrentLocation()
+	</script>
+	{% endif %}
+	<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+		<div id="address_map" style="width:100%;height:400px;"></div>
+	</div>
+</div>
+	{% endblock %}

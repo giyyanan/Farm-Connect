@@ -1,0 +1,45 @@
+<!--<div class="modal fade" id="popup_category_add" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title text-center">{% trans 'Add a Produce Category' %} </h4>
+					</div>
+					<div class="modal-body">
+						<form enctype="multipart/form-data" method="post" class ="wall-lg" method="post" action="{% url 'add_produce_category' %}">
+							<div>{% trans 'Category name' %} <input id="id_name" maxlength="15" name="name" type="text"></div>
+							<div>{% trans 'Category Picture' %} <input id="id_pic" name="pic" type="file"></div>
+							<input class="btn btn-primary" type="submit" value="{% trans 'Add' %}" />
+							{% csrf_token %}
+
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">{% trans 'Close' %}</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="popup_produce_add" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h4 class="modal-title text-center">{% trans 'Add a Produce' %} </h4>
+					</div>
+					<div class="modal-body">
+						<form enctype="multipart/form-data" method="post" class ="wall-lg" method="post" action="{% url 'add_produce' %}">
+							<div>{% trans 'Produce name' %} <input id="id_name" maxlength="15" name="name" type="text"></div>
+							<div>{% trans 'Produce Picture' %} <input id="id_pic" name="pic" type="file"></div>
+							<input type="hidden" id="id_category" name="category" value="{{categoryId}}">
+							<input class="btn btn-primary" type="submit" value="{% trans 'Add' %}" />
+							{% csrf_token %}
+
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">{% trans 'Close' %}</button>
+					</div>
+				</div>
+			</div>
+		</div>-->

@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{%block content%}
+{% load i18n %}
+<div class="text-center col-xs-12 col-sm-12 col-md-12 col-sm-12 text-center">
+<h2>{% trans 'Bids' %}</h2>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>{% trans 'Category' %}</th>
+        <th>{% trans 'Produce' %}</th>
+        <th>{% trans 'Price' %}</th>
+        <th>{% trans 'Quantity' %}</th>
+        <th>{% trans 'Delivery Date&Time' %}</th>
+        {% if User.user_type == "1"%}
+        <th>{% trans 'Buyer' %}</th>
+        {% endif %}
+        {% if User.user_type == "2"%}
+        <th>{% trans 'Seller' %}</th>
+        {% endif %}
+        <th>{% trans 'Pickup Date&Time' %}</th>
+        {% if User.user_type == "1"%}
+        <th>{% trans 'Status' %}</th>
+        {% elif User.user_type == "2"%}
+        <th>{% trans 'Action' %}<th>
+        {% endif %}
+        <th></th>
+      </tr>
+      {% for bid in bids %}
+      <tr>
+        <td>{{bid.demand.produce.category.name}}</td>
+        <td>{{bid.demand.produce.name}}</td>
+        <td>{{bid.demand.price}}</td>
+        <td>{{bid.demand.quantity}}</td>
+        <td>{{bid.demand.delivery_datetime}}</td>
+        {% if User.user_type == "1"%}
+        <td>{{bid.demand.buyer}}</td>
+        {% endif %}
+         {% if User.user_type == "2"%}
+        <td>{{bid.seller}}</td>
+        {% endif %}
+        <td>{{bid.pickup_datetime}}</td>
+        {% if User.user_type == "2"%}
+        {% if bid.status == '0'%}
+        <td><a href="{% url 'accept_order' bid.id %}" style="font-size: large;">Accept</a> <a href="{% url 'reject_bid' bid.id %}" style="color: red;font-size: large;">Reject</a> </td>
+        {% elif bid.status == '1'%}
+        <td><span class="label label-success">{% trans 'Accepted' %}</span></td>
+        {% elif bid.status == '8'%}
+        <td><span class="label label-warning">{% trans 'Cancelled' %}</span></td>
+        {% elif bid.status == '9'%}
+        <td><span class="label label-danger">{% trans 'Rejected' %}</span></td>
+        {% endif %}
+        {% elif User.user_type == "1"%}
+        {% if bid.status == '0'%}
+        <td><span class="label label-info">{% trans 'Pending' %}</span></td>
+        {% elif bid.status == '1'%}
+        <td><span class="label label-success">{% trans 'Accepted' %}</span></td>
+        {% elif bid.status == '8'%}
+        <td><span class="label label-warning">{% trans 'Cancelled' %}</span></td>
+        {% elif bid.status == '9'%}
+        <td><span class="label label-danger">{% trans 'Rejected' %}</span></td>
+        {% endif %}
+        <td><a href="{% url 'delete_bid' bid.id %}" style="color: red;font-size: large;">&times;</a> </td>
+        {% endif %}
+        
+      </tr>
+      {% endfor %}
+    </thead>
+  </table>
+  {% endblock %}

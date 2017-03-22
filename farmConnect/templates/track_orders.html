@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{%block content%}
+{% load i18n %}
+  <!--<ul class="nav nav-tabs">
+  <li class="active"><a href="#">All <span class="badge">5</a></li>
+  <li><a href="#">{% trans 'Accepted' %} <span class="badge">15</a></li>
+  <li><a href="#">{% trans 'Pending' %} <span class="badge">15</a></li>
+  <li><a href="#">{% trans 'Rejected' %} <span class="badge">10</a></li>
+</ul>-->
+
+   <div class="col-xs-12 col-md-12 col-sm-12 text-center">
+   <h2>{% trans 'Track Orders' %}</h2>
+    <table class="table">
+      <thead>
+       <tr>
+        <th>{% trans 'Category' %}</th>
+        <th>{% trans 'Produce' %}</th>
+        <th>{% trans 'Price' %}</th>
+        <th>{% trans 'Quantity' %}</th>
+        {% if User.user_type == '1'%}
+        <th>{% trans 'Buyer' %}</th>
+        {% endif %}
+        {% if User.user_type == '2'%}
+        <th>{% trans 'Seller' %}</th>
+        {% endif %}
+        </tr>
+      </thead>
+      <tbody>
+       {% for order in orders %}
+      <tr onclick="showMap(event)">
+        <td>{{order.bid.demand.produce.category.name}}</td>
+        <td>{{order.bid.demand.produce.name}}</td>
+        <td>{{order.bid.demand.price}}</td>
+        <td>{{order.bid.demand.quantity}}</td>
+        {% if User.user_type == '1'%}
+        <td>{{order.bid.demand.buyer}}</td>
+        {% endif %}
+        {% if User.user_type == '2'%}
+        <td>{{order.bid.seller}}</td>
+        {% endif %}
+        <td id="buyer_address" style="display: none;"></td>
+        <td id="seller_address" style="display: none;"></td>
+      </tr>
+      {% endfor %}    
+    </tbody>
+  </table>
+
+    <div id="track_map" style="width:100%;height:500px;"></div>
+
+
+</div>
+{% endblock %}
+
+

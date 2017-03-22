@@ -1,0 +1,32 @@
+
+{% extends "base.html" %}
+{%block content%}
+{% load i18n %}
+<div class="container">
+	<div class="panel-group">
+		<div class="row">
+			{% for produce in produces %}
+			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 produce_items">
+				<div class="panel panel-default produce_item" onclick="window.location='{% url 'create_demand' produce.id %}';">
+					<div class="panel-body panel_image text-center"><img style="height: 50px;width: 50px;" src = "{% url 'produce_pic' produce.id %}" alt="No Image"/ ></div>
+					<div class="panel-footer text-center" style = "font-size:">{{produce.name}}</div>
+				</div>		
+			</div>
+			{% endfor %}
+			<!--<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 produce_items">			
+				<div class="panel panel-default produce_item" data-toggle="modal" data-target="#popup_produce_add">
+					<div class="panel-body panel_image text-center"><span style="height: 50px;width: 50px;" class="glyphicon glyphicon-plus"></div>
+					<div class="panel-footer text-center" style = "font-size:">{% trans 'Add a Produce' %}</div>
+				</div>
+
+			</div>-->
+
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+<!--<ul class="pager">
+	<li><a href="#">Previous</a></li>
+	<li><a href="#">Next</a></li>
+</ul>-->

@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{%block content%}
+{% load i18n %}
+<div class="form-group">
+ {{errors}}   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <div class="row">
+        <label>{% trans 'Select Produce Category' %}</label>
+      </div>
+      <input type="text" class="form-control" id="category" list ="categories" placeholder="{% trans 'Category' %}" autocomplete="off" >
+      <datalist id="categories" onchange="">
+        {% for category in categories %}
+        <option id={{category.id}} value="{{category.name}}"/>
+        {% endfor %}
+      </datalist>
+    </input>
+    <div class="row">
+      <label>{% trans 'Select Produce' %}</label>
+    </div>
+    <input type="search" class="form-control" id="produce" list ="produces" placeholder="{%trans 'Produce' %}" autocomplete="off">
+    <datalist id="produces">
+      {% for produce in produces %}
+      <option category_id="{{produce.category.id}}" value="{{produce.name}}"/>
+      {% endfor %}
+    </datalist>
+  </input>
+  <div class="row">
+    <label>Quantity</label>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <input type="search" class="form-control" id="gt_quantity" placeholder="{% trans 'greater than (kg)' %}" onkeypress='return (event.charCode >= 48 && event.charCode <= 57) || event.keyCode == 8 || event.keyCode == 46' />
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <input type="search" class="form-control" id="lt_quantity" placeholder="{% trans 'lesser than (kg)' %}" onkeypress='return (event.charCode >= 48 && event.charCode <= 57) || event.keyCode == 8 || event.keyCode == 46' />
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <input type="search" class="form-control" id="eq_quantity" placeholder="{% trans 'equal to (kg)' %}" onkeypress='return (event.charCode >= 48 && event.charCode <= 57) || event.keyCode == 8 || event.keyCode == 46'/>
+  </div>
+  <div class="row">
+    <label>Price</label>
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <input type="search" class="form-control" id="gt_price" placeholder="{% trans 'greater than (Rs)' %}" onkeypress='return (event.charCode >= 48 && event.charCode <= 57) || event.keyCode == 8 || event.keyCode == 46' />
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <input type="search" class="form-control" id="lt_price" placeholder="{% trans 'lesser than (Rs)' %}" onkeypress='return (event.charCode >= 48 && event.charCode <= 57) || event.keyCode == 8 || event.keyCode == 46' />
+  </div>
+  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+    <input type="search" class="form-control" id="eq_price" placeholder="{% trans 'equal to (Rs)' %}" onkeypress='return (event.charCode >= 48 && event.charCode <= 57) || event.keyCode == 8 || event.keyCode == 46' />
+  </div>
+  <div class="row">
+  <br><br>
+  <div class= "col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <input class="btn btn-primary" id="searchDemand" type="submit" value="{% trans 'Search Demands' %}" onclick="searchDemands(event)"/>
+    </div>
+     <div class= "col-xs-6 col-sm-6 col-md-6 col-lg-6">
+    <input class="btn btn-primary" id="searchDemand" type="submit" value="{% trans 'Clear Search' %}" onclick="window.location='/search-demands';"/>
+    </div>
+    {% csrf_token %}
+  </div>
+</div>
+<div id="demandsTable">
+{% include "demands_table.html" %}
+</div>
+{% endblock %}

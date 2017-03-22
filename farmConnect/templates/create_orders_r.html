@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title> Farm Connect </title>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   <title> Register </title>
+</head>
+<body>
+   <div class="container">
+      <div class="navbar navbar-default">
+      <div class="navbar-header navbar-center" >
+         <div class ="">
+            <p class="navbar-brand text-center">Farm Connect</p>
+         </div>
+      </div>
+   </div>
+      <form class="form-horizontal" role="form">
+         {{Produce Category}} : {{Produce}}
+         <br>
+         <div class="form-group">
+
+            <label class="control-label col-xs-10 col-sm-2 col-md-5 col-lg-2" for="quantity">Quantity:</label>
+            <div class="col-xs-10 col-sm-10 col-md-7 col-lg-10">
+               <input type="number" class="form-control" id="quantity" placeholder="Enter quantity">
+            </div>
+         </div>
+         <div class="form-group">
+            <label class="control-label col-xs-10 col-sm-2 col-md-4 col-lg-2" for="price">Price:</label>
+            <div class="col-xs-10 col-sm-10 col-md-7 col-lg-10">          
+               <input type="number" min="1" step="any" id="pwd" placeholder="Enter price"/>
+            </div>
+         </div>
+         <div class="form-group">
+            <label class="control-label col-xs-10 col-sm-2 col-md-4 col-lg-2" for="name">Delivery Date&Time:</label>
+            <div class="col-xs-10 col-sm-10 col-md-7 col-lg-10">
+               <input type="datetime-local" class="form-control" id="delivery_datetime" placeholder="Enter the date and time for delivery"/>
+            </div>
+         </div>
+         <div class="form-group">
+          <label class="control-label col-xs-10 col-sm-2 col-md-4 col-lg-2" for="name">Notes</label>
+            <div class="col-xs-10 col-sm-10 col-md-7 col-lg-10">
+         <textarea id="notes" rows="2">
+            </textarea>
+            </div>
+            <div class="form-group">
+               <div class="col-md-offset-3 col-xs-offset-3 col-sm-offset-3 col-md-2 col-xs-2 col-sm-2">
+                  <button type="submit" class="btn btn-default">Place Order</button>
+               </div>
+            </div>
+         </div>
+      </form>
+   </div>
+</body>
+</html>

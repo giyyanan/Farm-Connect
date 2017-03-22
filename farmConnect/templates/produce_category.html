@@ -1,0 +1,34 @@
+
+{% extends "base.html" %}
+{%block content%}
+{% load i18n %}
+<div class="container">
+	<div class="panel-group">
+		<div class="row">
+			{% for category in categories %}
+			<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 category_items">
+				<div class="panel panel-default category-item" onclick="window.location='{% url 'produce_in_category' category.id %}';">
+
+						<div id={{category.id}} class="panel-body panel_image text-center"><img style="height: 80px;width: 100px;" src = "{% url 'category_pic' category.id %}" alt="No Image"/ ></div>
+						<div class="panel-footer text-center" style = "font-size:">{{category.name}}</div>
+
+				</div>		
+			</div>
+			{% endfor %}
+			<!--<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 category_items">			
+				<div class="panel panel-default category-item" data-toggle="modal" data-target="#popup_category_add">
+					<div class="panel-body panel_image text-center"><span style="height: 80px;width: 80px;" class="glyphicon glyphicon-plus"></div>
+					<div class="panel-footer text-center" style = "font-size:">{% trans 'Add a Category' %}</div>
+				</div>
+
+			</div>-->
+
+		</div>
+	</div>
+</div>
+{% endblock %}
+
+<!--<ul class="pager">
+	<li><a href="#">Previous</a></li>
+	<li><a href="#">Next</a></li>
+</ul>-->

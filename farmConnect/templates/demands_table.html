@@ -1,0 +1,27 @@
+{% load i18n %}
+<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-sm-12">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>{% trans 'Category' %}</th>
+          <th>{% trans 'Produce' %}</th>
+          <th>{% trans 'Price' %}</th>
+          <th>{% trans 'Quantity' %}</th>
+          <th>{% trans 'Delivery Date' %}</th>
+          <th></th>
+        </tr>
+        {% for demand in demands %}
+        <tr>
+          <td>{{demand.produce.category.name}}</td>
+          <td>{{demand.produce.name}}</td>
+          <td>{{demand.price}}</td>
+          <td>{{demand.quantity}}</td>
+          <td>{{demand.delivery_datetime}}</td>
+          <td><a href="{% url 'create_bid' demand.id %}" style="font-size: large;">{% trans 'Place Bid' %}</a> </td>
+        </tr>
+        {% endfor %}
+      </thead>
+    </table>
+  </div>
+</div>

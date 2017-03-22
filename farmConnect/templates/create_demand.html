@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block media%}
+{{ form.media }}
+{% endblock %}
+{%block content%}
+{% load i18n %}
+<div class="container">
+	
+	<div class="row">
+		<div class="modal-body">
+
+			<div class="row">
+				{% trans 'Produce Category' %}	
+				<input id="produce_category" name="produce_category" type="text" value="{{produce.category.name}}" disabled>
+				<a class="btn btn-primary" value=""  href="{% url 'produce_category' %}">{% trans 'Change' %}</a>
+			</div>
+			<div class="row">
+				{% trans 'Produce Name' %}	
+				<input id="produce_name" name="produce_name" type="text" value="{{produce.name}}" disabled>
+				<a class="btn btn-primary" value="" href="{% url 'produce_in_category' produce.category.id %}">{% trans 'Change' %}</a>
+			</div>
+			<form enctype="multipart/form-data" method="post" class ="wall-lg" method="post" action="{% url 'create_demand' produce.id %}">
+				<div class="row">{% trans 'Quantity' %}	{{form.quantity}}<span class="label label-primary" style="font-size: large;">&#13199;</span> <h4 class="text-danger" style="color: red">{{form.quantity.errors}}</h4></div>
+				<div class="row">{% trans 'Price' %} {{form.price}}<span class="label label-primary" style="font-size: large;">&#8377;</span><h4 class="text-danger" style="color: red;">{{form.price.errors}}</h4></div>
+				<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 row">{% trans 'Delivery Date & Time' %}{{form.deldatetime }}<h4 class="text-danger" style="color: red">{{form.deldatetime.errors}}</h4></div>
+				</div>
+				<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 row">{% trans 'Bid End Date & Time' %}{{form.biddatetime }}<h4 class="text-danger" style="color: red">{{form.biddatetime.errors}}</h4></div>
+				</div>
+				<input class="btn btn-primary" type="submit" value="{% trans 'Place Demand' %}" />
+				{% csrf_token %}
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

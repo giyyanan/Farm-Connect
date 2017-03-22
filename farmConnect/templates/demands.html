@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{%block content%}
+{% load i18n %}
+	 <div class="col-xs-12 col-sm-12 col-md-12 col-sm-12 text-center">
+<h2>{% trans 'Demands' %}</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>{% trans 'Category' %}</th>
+          <th>{% trans 'Produce' %}</th>
+          <th>{% trans 'Price' %}</th>
+          <th>{% trans 'Quantity' %}</th>
+          <th>{% trans 'Delivery Date&Time' %}</th>
+           <th>{% trans 'Bids end at Date&Time' %}</th>
+          <th>{% trans 'Bids' %}<th>
+          <th></th>
+        </tr>
+        {% for demand in demands %}
+        <tr>
+        <td>{{demand.produce.category.name}}</td>
+        <td>{{demand.produce.name}}</td>
+        <td>{{demand.price}}</td>
+        <td>{{demand.quantity}}</td>
+        <td>{{demand.delivery_datetime}}</td>
+        <td>{{demand.bid_end_datetime}}</td>
+        <td><a href="{% url 'view_demand_bids' demand.id %}"><span class="badge">{{demand.getBidCount}}</span></a></td>
+        <td><a href="{% url 'delete_demand' demand.id %}" style="color: red;font-size: large;">&times;</a> </td>
+        </tr>
+        {% endfor %}
+      </thead>
+      </table>
+{% endblock %}

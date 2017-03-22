@@ -1,0 +1,991 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-04-25 13:50-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: farmConnect/forms.py:17
+msgid "Latitude"
+msgstr "அஞ்சல் அட்சரேகை"
+
+#: farmConnect/forms.py:17 farmConnect/forms.py:18
+msgid "Value should be a Co-ordinate"
+msgstr "அஞ்சல் மதிப்பு ஒரு ஆயம் இருக்க வேண்டும்"
+
+#: farmConnect/forms.py:18
+msgid "Longitude"
+msgstr "அஞ்சல் தீர்க்க"
+
+#: farmConnect/forms.py:27
+#, fuzzy
+#| msgid "Farmer"
+msgid "Farm Name"
+msgstr "விவசாயி"
+
+#: farmConnect/forms.py:36
+#, fuzzy
+#| msgid "Produce Name"
+msgid "Store Name"
+msgstr "விளைபொருட்களின் பெயர்"
+
+#: farmConnect/forms.py:45
+#, fuzzy
+#| msgid "Phone Number"
+msgid "Door Number"
+msgstr "தொலைபேசி எண்"
+
+#: farmConnect/forms.py:45
+#, fuzzy
+#| msgid "Enter only letters and numbers"
+msgid "Enter only letters, numbers and \\ , /"
+msgstr "எழுத்துகள் மற்றும் எண்கள் உள்ளிடவும்"
+
+#: farmConnect/forms.py:46
+#, fuzzy
+#| msgid "Street"
+msgid "Street Name"
+msgstr "தெரு"
+
+#: farmConnect/forms.py:47
+msgid "Village Name (or) Region"
+msgstr "கிராமம் (அல்லது) பகுதி"
+
+#: farmConnect/forms.py:48
+msgid "Town Name (or) Taluk"
+msgstr "டவுன் பெயர் (அல்லது) தாலுகா"
+
+#: farmConnect/forms.py:49
+msgid "City (or) District"
+msgstr "ஸிடீ (அல்லது) மாவட்டம்"
+
+#: farmConnect/forms.py:51
+msgid "Andaman and Nicobar Islands"
+msgstr "அந்தமான் நிக்கோபார் தீவுகள் "
+
+#: farmConnect/forms.py:52
+msgid "Andhra Pradesh"
+msgstr "ஆந்திரப் பிரதேசம்"
+
+#: farmConnect/forms.py:53
+msgid "Arunachal Pradesh"
+msgstr "அருணாசலப் பிரதேசம்"
+
+#: farmConnect/forms.py:54
+msgid "Assam"
+msgstr "அசாம்"
+
+#: farmConnect/forms.py:55
+msgid "Bihar"
+msgstr "பீகார்"
+
+#: farmConnect/forms.py:56
+msgid "Chhattisgarh"
+msgstr "சத்தீஸ்கர்"
+
+#: farmConnect/forms.py:57
+msgid "Chandigarh"
+msgstr "சண்டிகர்"
+
+#: farmConnect/forms.py:58
+msgid "Daman and Diu"
+msgstr "டாமன் மற்றும் டையூ"
+
+#: farmConnect/forms.py:59
+msgid "Dadra and Nagar Haveli"
+msgstr "தாத்ரா மற்றும் நகர் ஹவேலி"
+
+#: farmConnect/forms.py:60
+msgid "Delhi"
+msgstr "தில்லி"
+
+#: farmConnect/forms.py:61
+msgid "Goa"
+msgstr "கோவா"
+
+#: farmConnect/forms.py:62
+msgid "Gujarat"
+msgstr "குஜராத்"
+
+#: farmConnect/forms.py:63
+msgid "Haryana"
+msgstr "அரியானா"
+
+#: farmConnect/forms.py:64
+msgid "Himachal Pradesh"
+msgstr "இமாசலப் பிரதேசம்"
+
+#: farmConnect/forms.py:65
+msgid "Jammu and Kashmir"
+msgstr "ஜம்மு காஷ்மீர்"
+
+#: farmConnect/forms.py:66
+msgid "Jharkhand"
+msgstr "ஜார்க்கண்ட்"
+
+#: farmConnect/forms.py:67
+msgid "Karnataka"
+msgstr "கர்நாடக"
+
+#: farmConnect/forms.py:68
+msgid "Kerala"
+msgstr "கேரளா"
+
+#: farmConnect/forms.py:69
+msgid "Lakshadweep"
+msgstr "லட்சத்தீவுகள்"
+
+#: farmConnect/forms.py:70
+msgid "Madhya Pradesh"
+msgstr "மத்தியப் பிரதேசம்"
+
+#: farmConnect/forms.py:71
+msgid "Maharashtra"
+msgstr "மகாராஷ்டிரா"
+
+#: farmConnect/forms.py:72
+msgid "Manipur"
+msgstr "மணிப்பூர்"
+
+#: farmConnect/forms.py:73
+msgid "Meghalaya"
+msgstr "மேகாலயா"
+
+#: farmConnect/forms.py:74
+msgid "Mizoram"
+msgstr "மிசோரம்"
+
+#: farmConnect/forms.py:75
+msgid "Nagaland"
+msgstr "நாகாலாந்து"
+
+#: farmConnect/forms.py:76
+msgid "Orissa"
+msgstr "ஒரிசா"
+
+#: farmConnect/forms.py:77
+msgid "Punjab"
+msgstr "பஞ்சாப்"
+
+#: farmConnect/forms.py:78
+msgid "Pondicherry"
+msgstr "பாண்டிச்சேரி"
+
+#: farmConnect/forms.py:79
+msgid "Rajasthan"
+msgstr "ராஜஸ்தான்"
+
+#: farmConnect/forms.py:80
+msgid "Sikkim"
+msgstr "சிக்கிம்"
+
+#: farmConnect/forms.py:81
+msgid "Tamil Nadu"
+msgstr "தமிழ்நாடு"
+
+#: farmConnect/forms.py:82
+msgid "Tripura"
+msgstr "திரிபுரா"
+
+#: farmConnect/forms.py:83
+msgid "Uttarakhand"
+msgstr "உத்தரகண்ட்"
+
+#: farmConnect/forms.py:84
+msgid "Uttar Pradesh"
+msgstr "உத்தரப் பிரதேசம்"
+
+#: farmConnect/forms.py:85
+msgid "West Bengal"
+msgstr "மேற்கு வங்கம்"
+
+#: farmConnect/forms.py:89
+msgid "PIN Code"
+msgstr ""
+
+#: farmConnect/forms.py:89
+#, fuzzy
+#| msgid "Enter only letters and numbers"
+msgid "Enter only numbers"
+msgstr "எழுத்துகள் மற்றும் எண்கள் உள்ளிடவும்"
+
+#: farmConnect/forms.py:97
+msgid "Farmer"
+msgstr "விவசாயி"
+
+#: farmConnect/forms.py:97
+msgid "Retailer"
+msgstr "விற்பனையாளர்"
+
+#: farmConnect/forms.py:99
+msgid "Username"
+msgstr "பயனர் பெயர்"
+
+#: farmConnect/forms.py:99
+msgid "Enter only letters and numbers"
+msgstr "எழுத்துகள் மற்றும் எண்கள் உள்ளிடவும்"
+
+#: farmConnect/forms.py:100
+#, fuzzy
+#| msgid "Full name"
+msgid "First name"
+msgstr "முழு பெயர்"
+
+#: farmConnect/forms.py:101
+#, fuzzy
+#| msgid "Category name"
+msgid "Last name"
+msgstr "வகை பெயர்"
+
+#: farmConnect/forms.py:102
+msgid "Password"
+msgstr "கடவுச்சொல்"
+
+#: farmConnect/forms.py:103
+msgid "Confirm password"
+msgstr "கடவுச்சொல்லை உறுதி செய்"
+
+#: farmConnect/forms.py:104
+msgid "aa@bb.com"
+msgstr ""
+
+#: farmConnect/forms.py:106
+msgid "Phone Number"
+msgstr "தொலைபேசி எண்"
+
+#: farmConnect/forms.py:106
+msgid ""
+"Phone number must be entered in the format: '+999999999'. Up to 15 digits "
+"allowed."
+msgstr " தொலைபேசி எண் வடிவத்தில் உள்ளிட்ட வேண்டும் . 15 இலக்கங்கள் செய்ய '+999999999' "
+
+#: farmConnect/forms.py:108
+msgid "English"
+msgstr "ஆங்கிலம்"
+
+#: farmConnect/forms.py:109
+msgid "Tamil"
+msgstr "தமிழ்"
+
+#: farmConnect/forms.py:118
+msgid "Passwords did not match."
+msgstr "கடவுச்சொற்கள் பொருந்தவில்லை."
+
+#: farmConnect/forms.py:121
+msgid "Username is already taken."
+msgstr "பயனர்பெயர் ஏற்கனவே உள்ளது."
+
+#: farmConnect/forms.py:129
+msgid "Choose an Account type"
+msgstr ""
+
+#: farmConnect/forms.py:137 farmConnect/templates/popups.html.py:11
+msgid "Category Picture"
+msgstr "உற்பத்தி வகை படம்"
+
+#: farmConnect/forms.py:161 farmConnect/templates/popups.html.py:33
+msgid "Produce Picture"
+msgstr "உற்பத்தி படம்"
+
+#: farmConnect/forms.py:197
+msgid ""
+"Delivery Date and time should should be greater than the current date and "
+"time"
+msgstr "விநியோக தேதி மற்றும் நேரம் தற்போதைய தேதிய  விட அதிகமாக இருக்க வேண்டும்"
+
+#: farmConnect/forms.py:204
+msgid ""
+"Bid Date and time should should be lesser than the Delivery date and time"
+msgstr "ஏல தேதி மற்றும் நேரம் விநியோக தேதி மற்றும் நேரதை குறைவாக இருக்க வேண்டும்"
+
+#: farmConnect/templates/account.html:9
+msgid "Address"
+msgstr "முகவரி"
+
+#: farmConnect/templates/account.html:10 farmConnect/templates/profile.html:8
+msgid "Profile"
+msgstr "விபரம்"
+
+#: farmConnect/templates/address.html:51 farmConnect/templates/popups.html:12
+#: farmConnect/templates/popups.html:35 farmConnect/templates/stores.html:67
+msgid "Add"
+msgstr "சேர்"
+
+#: farmConnect/templates/address.html:53 farmConnect/templates/profile.html:29
+msgid "Update"
+msgstr "புதுப்பிக்கபவும்"
+
+#: farmConnect/templates/address.html:54
+msgid "Save Location"
+msgstr "இடம் சேமிக்கவும்"
+
+#: farmConnect/templates/base.html:7 farmConnect/templates/base.html.py:37
+#: farmConnect/templates/login.html:61
+msgid "Farm Connect"
+msgstr "விவசாய இணையம்"
+
+#: farmConnect/templates/base.html:43 farmConnect/templates/base.html.py:58
+msgid "LOGOUT"
+msgstr "வெளியேறு"
+
+#: farmConnect/templates/base.html:60
+msgid "ACCOUNT"
+msgstr "கணக்கு"
+
+#: farmConnect/templates/base.html:63
+msgid "HOME"
+msgstr "முகப்பு"
+
+#: farmConnect/templates/base.html:103 farmConnect/templates/register.html:140
+msgid "Success!"
+msgstr "வெற்றி : "
+
+#: farmConnect/templates/base.html:107 farmConnect/templates/register.html:144
+msgid "Info!"
+msgstr "தகவல் : "
+
+#: farmConnect/templates/base.html:111 farmConnect/templates/register.html:148
+msgid "Warning!"
+msgstr "எச்சரிக்கை : "
+
+#: farmConnect/templates/base.html:115 farmConnect/templates/register.html:152
+msgid "Error!"
+msgstr "பிழை : "
+
+#: farmConnect/templates/bids.html:5 farmConnect/templates/demands.html:15
+msgid "Bids"
+msgstr "ஏலம்"
+
+#: farmConnect/templates/bids.html:9 farmConnect/templates/demands.html:9
+#: farmConnect/templates/demands_table.html:7
+#: farmConnect/templates/orders.html:15
+#: farmConnect/templates/search_demands.html:9
+#: farmConnect/templates/track_orders.html:16
+msgid "Category"
+msgstr "வகை"
+
+#: farmConnect/templates/bids.html:10 farmConnect/templates/demands.html:10
+#: farmConnect/templates/demands_table.html:8
+#: farmConnect/templates/orders.html:16
+#: farmConnect/templates/search_demands.html:19
+#: farmConnect/templates/track_orders.html:17
+msgid "Produce"
+msgstr "உற்பத்தி"
+
+#: farmConnect/templates/bids.html:11 farmConnect/templates/create_bid.html:23
+#: farmConnect/templates/create_demand.html:24
+#: farmConnect/templates/demands.html:11
+#: farmConnect/templates/demands_table.html:9
+#: farmConnect/templates/orders.html:17
+#: farmConnect/templates/track_orders.html:18
+msgid "Price"
+msgstr "விலை"
+
+#: farmConnect/templates/bids.html:12 farmConnect/templates/create_bid.html:22
+#: farmConnect/templates/create_demand.html:23
+#: farmConnect/templates/demands.html:12
+#: farmConnect/templates/demands_table.html:10
+#: farmConnect/templates/orders.html:18
+#: farmConnect/templates/track_orders.html:19
+msgid "Quantity"
+msgstr "அளவு"
+
+#: farmConnect/templates/bids.html:13 farmConnect/templates/demands.html:13
+#: farmConnect/templates/orders.html:19
+msgid "Delivery Date&Time"
+msgstr "விநியோக தேதி & நேரம்"
+
+#: farmConnect/templates/bids.html:15 farmConnect/templates/orders.html:21
+#: farmConnect/templates/track_orders.html:21
+msgid "Buyer"
+msgstr "வாங்குபவர்"
+
+#: farmConnect/templates/bids.html:18 farmConnect/templates/orders.html:24
+#: farmConnect/templates/track_orders.html:24
+msgid "Seller"
+msgstr "விற்பனையாளர்"
+
+#: farmConnect/templates/bids.html:20 farmConnect/templates/orders.html:26
+msgid "Pickup Date&Time"
+msgstr "எடுத்துவரும் தேதி & நேரம்"
+
+#: farmConnect/templates/bids.html:22
+msgid "Status"
+msgstr "நிலவறம்"
+
+#: farmConnect/templates/bids.html:24
+msgid "Action"
+msgstr "நடவடிக்கை"
+
+#: farmConnect/templates/bids.html:46 farmConnect/templates/bids.html.py:56
+#: farmConnect/templates/orders.html:6
+#: farmConnect/templates/track_orders.html:6
+msgid "Accepted"
+msgstr "ஏற்றுக்கொள்ளப்பட்டது"
+
+#: farmConnect/templates/bids.html:48 farmConnect/templates/bids.html.py:58
+msgid "Cancelled"
+msgstr "ரத்து"
+
+#: farmConnect/templates/bids.html:50 farmConnect/templates/bids.html.py:60
+#: farmConnect/templates/orders.html:8
+#: farmConnect/templates/track_orders.html:8
+msgid "Rejected"
+msgstr "நிராகரிக்கப்பட்டது"
+
+#: farmConnect/templates/bids.html:54 farmConnect/templates/orders.html:7
+#: farmConnect/templates/track_orders.html:7
+msgid "Pending"
+msgstr "நிலுவையில்"
+
+#: farmConnect/templates/confirmation.html:6
+msgid "Farm Connect -- Confirmation needed"
+msgstr "விவசாய இணையம் -- உறுதிப்படுத்தல் தேவைப்படுகிறது"
+
+#: farmConnect/templates/confirmation.html:11
+msgid "A confirmation SMS has been sent to"
+msgstr "உறுதிப்படுத்தல் எஸ்எம்எஸ் அனுப்பபட்டது"
+
+#: farmConnect/templates/confirmation.html:11
+#, fuzzy
+#| msgid ""
+#| "A confirmation SMS has been sent to {{phone_number}}.  Please click the "
+#| "link in that SMS to confirm your phone number and complete your "
+#| "registation for your Farm Connect Account."
+msgid ""
+". Please click the link in the SMS to confirm your phone number and complete "
+"your registation for your Farm Connect Account."
+msgstr ""
+"ஒரு உறுதிப்படுத்தல் எஸ்எம்எஸ் {{PHONE_NUMBER}} இணைப்பை. கிளிக் செய்து அனுப்பி "
+"வருகிறதுஎன்று எஸ்எம்எஸ் உங்கள் தொலைபேசி எண் உறுதி மற்றும் உங்கள் பதிவு செய்தல் "
+"முடிக்கஉங்கள் பண்ணை இணைப்பு கணக்கு"
+
+#: farmConnect/templates/create_bid.html:13
+#: farmConnect/templates/create_demand.html:13
+msgid "Produce Category"
+msgstr "விளைபொருட்களின் வகை"
+
+#: farmConnect/templates/create_bid.html:17
+#: farmConnect/templates/create_demand.html:18
+msgid "Produce Name"
+msgstr "விளைபொருட்களின் பெயர்"
+
+#: farmConnect/templates/create_bid.html:24
+#: farmConnect/templates/create_demand.html:26
+#, fuzzy
+#| msgid "Delivery Date&Time"
+msgid "Delivery Date & Time"
+msgstr "விநியோக தேதி & நேரம்"
+
+#: farmConnect/templates/create_bid.html:25
+#, fuzzy
+#| msgid "Date & Time"
+msgid "Bids End at Date & Time"
+msgstr "தேதி & நேரம்"
+
+#: farmConnect/templates/create_bid.html:28
+msgid "Pickup Date & Time"
+msgstr "எடுத்துவரும் தேதி & நேரம்"
+
+#: farmConnect/templates/create_bid.html:31
+msgid "Order Confirmation Date & Time"
+msgstr "ஆணை உறுதிப்படுத்தல் தேதி & நேரம்"
+
+#: farmConnect/templates/create_bid.html:32
+#: farmConnect/templates/demands_table.html:21
+msgid "Place Bid"
+msgstr "ஏலம் இடவும்"
+
+#: farmConnect/templates/create_demand.html:15
+#: farmConnect/templates/create_demand.html:20
+msgid "Change"
+msgstr "மாற்றம்"
+
+#: farmConnect/templates/create_demand.html:29
+#, fuzzy
+#| msgid "Date & Time"
+msgid "Bid End Date & Time"
+msgstr "தேதி & நேரம்"
+
+#: farmConnect/templates/create_demand.html:31
+#, fuzzy
+#| msgid "Create  Demand"
+msgid "Place Demand"
+msgstr "கோரிக்கைகள் உருவாக்கு"
+
+#: farmConnect/templates/demands.html:5
+#, fuzzy
+#| msgid "View  Demands"
+msgid "Demands"
+msgstr "கோரிக்கைகள் காண்க"
+
+#: farmConnect/templates/demands.html:14
+#, fuzzy
+#| msgid "Delivery Date&Time"
+msgid "Bids end at Date&Time"
+msgstr "விநியோக தேதி & நேரம்"
+
+#: farmConnect/templates/demands_table.html:11
+msgid "Delivery Date"
+msgstr "விநியோக தேதி"
+
+#: farmConnect/templates/farmer_dashboard.html:6
+msgid "View  Demands"
+msgstr "கோரிக்கைகள் காண்க"
+
+#: farmConnect/templates/farmer_dashboard.html:11
+msgid "Existing Bids"
+msgstr "தற்போதுள்ள ஏலம்"
+
+#: farmConnect/templates/farmer_dashboard.html:18
+#: farmConnect/templates/reatiler_dashboard.html:17
+msgid "View Orders"
+msgstr "ஆணைகள் காண்க "
+
+#: farmConnect/templates/farmer_dashboard.html:23
+#: farmConnect/templates/reatiler_dashboard.html:22
+msgid "Track  Orders"
+msgstr "ஆணைகள் பின்பற்ற"
+
+#: farmConnect/templates/login.html:69
+msgid "Log in to Farm Connect"
+msgstr "விவசாய இணையம் உள்நுழைய"
+
+#: farmConnect/templates/login.html:70
+msgid "Forgot password?"
+msgstr "கடவுச்சொல்லை மறந்து விட்டீர்களா?"
+
+#: farmConnect/templates/login.html:74
+msgid "Incorrect user name and password"
+msgstr ""
+
+#: farmConnect/templates/login.html:79
+msgid "Please enter username"
+msgstr "பயனர் பெயர் உள்ளிடவும்"
+
+#: farmConnect/templates/login.html:84
+msgid "Please enter password"
+msgstr "கடவுச்சொல்லை உள்ளிடவும்"
+
+#: farmConnect/templates/login.html:90
+msgid "Submit"
+msgstr "சமர்ப்பிக்க"
+
+#: farmConnect/templates/login.html:100 farmConnect/templates/register.html:35
+#: farmConnect/templates/register.html:131
+msgid "Register"
+msgstr "புதிய பயனாளர்"
+
+#: farmConnect/templates/orders.html:11
+#, fuzzy
+#| msgid "View Orders"
+msgid "Orders"
+msgstr "ஆணைகள் காண்க "
+
+#: farmConnect/templates/popups.html:6
+msgid "Add a Produce Category"
+msgstr "உற்பத்திப் பகுப்பு சேர்க்கவும்"
+
+#: farmConnect/templates/popups.html:10
+msgid "Category name"
+msgstr "வகை பெயர்"
+
+#: farmConnect/templates/popups.html:18 farmConnect/templates/popups.html:41
+#: farmConnect/templates/stores.html:74
+msgid "Close"
+msgstr "மூடு"
+
+#: farmConnect/templates/popups.html:28
+#: farmConnect/templates/produce_in_category.html:19
+msgid "Add a Produce"
+msgstr "உற்பத்திப சேர்"
+
+#: farmConnect/templates/popups.html:32
+msgid "Produce name"
+msgstr "உற்பத்தி பெயர்"
+
+#: farmConnect/templates/produce_category.html:21
+msgid "Add a Category"
+msgstr "விளைபொருட்களின் வகை சேர்க்கவும்"
+
+#: farmConnect/templates/reatiler_dashboard.html:5
+msgid "Create  Demand"
+msgstr "கோரிக்கைகள் உருவாக்கு"
+
+#: farmConnect/templates/reatiler_dashboard.html:10
+msgid "Existing Demands"
+msgstr "தற்போதுள்ள கோரிக்கைகள்"
+
+#: farmConnect/templates/register.html:51
+#, fuzzy
+#| msgid "Register"
+msgid "Registration"
+msgstr "புதிய பயனாளர்"
+
+#: farmConnect/templates/register.html:57
+msgid "Choose account type:"
+msgstr " கணக்கு வகை தேர்வு செய்யவும்  :"
+
+#: farmConnect/templates/search_demands.html:7
+#, fuzzy
+#| msgid "Produce Category"
+msgid "Select Produce Category"
+msgstr "விளைபொருட்களின் வகை"
+
+#: farmConnect/templates/search_demands.html:17
+#, fuzzy
+#| msgid "Produce"
+msgid "Select Produce"
+msgstr "உற்பத்தி"
+
+#: farmConnect/templates/search_demands.html:30
+msgid "greater than (kg)"
+msgstr "அதிகமாக (கிலோ)"
+
+#: farmConnect/templates/search_demands.html:33
+msgid "lesser than (kg)"
+msgstr "குறைவாக (கிலோ)"
+
+#: farmConnect/templates/search_demands.html:36
+msgid "equal to (kg)"
+msgstr "சமமாக (கிலோ)"
+
+#: farmConnect/templates/search_demands.html:42
+msgid "greater than (Rs)"
+msgstr "அதிகமாக (ரூ)"
+
+#: farmConnect/templates/search_demands.html:45
+msgid "lesser than (Rs)"
+msgstr "குறைவாக (ரூ)"
+
+#: farmConnect/templates/search_demands.html:48
+msgid "equal to (Rs)"
+msgstr "சமமாக (ரூ)"
+
+#: farmConnect/templates/search_demands.html:53
+msgid "Search Demands"
+msgstr "கோரிக்கைகள் தேடவும் "
+
+#: farmConnect/templates/search_demands.html:56
+msgid "Clear Search"
+msgstr "தேடல் அளவுருக்கள் நீக்கவும்"
+
+#: farmConnect/templates/stores.html:17 farmConnect/templates/stores.html:30
+#, fuzzy
+#| msgid "Add a Category"
+msgid "Add a Store"
+msgstr "விளைபொருட்களின் வகை சேர்க்கவும்"
+
+#: farmConnect/templates/track_orders.html:12
+#, fuzzy
+#| msgid "Track  Orders"
+msgid "Track Orders"
+msgstr "ஆணைகள் பின்பற்ற"
+
+#: farmConnect/views.py:56
+#, fuzzy
+#| msgid ""
+#| "A confirmation SMS has been sent to {{phone_number}}.  Please click the "
+#| "link in that SMS to confirm your phone number and complete your "
+#| "registation for your Farm Connect Account."
+msgid ""
+"Welcome to Farm Connect .  Please click the link below to verify your phone "
+"number and complete the registration of your account:"
+msgstr ""
+"ஒரு உறுதிப்படுத்தல் எஸ்எம்எஸ் {{PHONE_NUMBER}} இணைப்பை. கிளிக் செய்து அனுப்பி "
+"வருகிறதுஎன்று எஸ்எம்எஸ் உங்கள் தொலைபேசி எண் உறுதி மற்றும் உங்கள் பதிவு செய்தல் "
+"முடிக்கஉங்கள் பண்ணை இணைப்பு கணக்கு"
+
+#: farmConnect/views.py:64
+msgid "Error occured during registration"
+msgstr "உறுதிப்படுத்தல்"
+
+#: farmConnect/views.py:78
+msgid "Address is not stored for user. Go to accounts to update the address"
+msgstr "பயனர் முகவரி சேமிக்கப்படவில்லை. கணக்குகள் சென்று முகவரி புதுப்பிக்க"
+
+#: farmConnect/views.py:81
+msgid "failed to fetch user information"
+msgstr "உறுதிப்படுத்தல்"
+
+#: farmConnect/views.py:90
+msgid "failed to send SMS"
+msgstr "எஸ்எம்எஸ் அனுப்புவது தோல்வியடைந்தது"
+
+#: farmConnect/views.py:99
+#, fuzzy
+#| msgid "failed to fetch user information"
+msgid "failed to fetch account details"
+msgstr "உறுதிப்படுத்தல்"
+
+#: farmConnect/views.py:129 farmConnect/views.py:430
+msgid "form is not valid"
+msgstr "வடிவம் தவறானது"
+
+#: farmConnect/views.py:149
+#, fuzzy
+#| msgid "Farm Connect -- Confirmation needed"
+msgid "Farm Connect : Your Profile Information has been modified"
+msgstr "விவசாய இணையம் -- உறுதிப்படுத்தல் தேவைப்படுகிறது"
+
+#: farmConnect/views.py:151
+msgid "User Information updated Successfully"
+msgstr "தகவல் வெற்றிகரமாக புதுப்பிக்கப்பட்டது"
+
+#: farmConnect/views.py:154
+msgid "failed to save profile"
+msgstr "விபரக்கோவைக் சேமிக்க தவறிவிட்டது"
+
+#: farmConnect/views.py:199
+#, fuzzy
+#| msgid "failed to fetch user information"
+msgid "failed to fetch save stores"
+msgstr "உறுதிப்படுத்தல்"
+
+#: farmConnect/views.py:225
+msgid "Form values not valid"
+msgstr "படிவம் மதிப்புகள் செல்லுபடியாகாது"
+
+#: farmConnect/views.py:240
+msgid "address succesfully saved"
+msgstr "முகவரி வெற்றிகரமாகப் சேமிக்கபட்டது"
+
+#: farmConnect/views.py:242
+msgid "failed to update address fetch save stores"
+msgstr "முகவரி எடுக்க கடைகள் காப்பாற்ற புதுப்பிப்பதில் தோல்வி"
+
+#: farmConnect/views.py:275 farmConnect/views.py:303 farmConnect/views.py:344
+#: farmConnect/views.py:374
+msgid "Encountered while fetching categories"
+msgstr "பிரிவுகள் பெறுவதில் ஏற்பட்டது"
+
+#: farmConnect/views.py:289 farmConnect/views.py:331 farmConnect/views.py:358
+#: farmConnect/views.py:406 farmConnect/views.py:455 farmConnect/views.py:475
+#: farmConnect/views.py:537 farmConnect/views.py:572 farmConnect/views.py:652
+#: farmConnect/views.py:691 farmConnect/views.py:782 farmConnect/views.py:820
+msgid "Action not allowed for user type"
+msgstr "செயல்பாடு பயனர் வகைக்கு அனுமதி இல்லை"
+
+#: farmConnect/views.py:301
+msgid "Produce category added successfully"
+msgstr "விளைபொருட்களின் வகை வெற்றிகரமாக சேர்க்கப்பட்டது"
+
+#: farmConnect/views.py:318 farmConnect/views.py:392
+msgid "Encountered while fetching image for the category"
+msgstr "வகை பட பெறுவதில் ஏற்பட்டது"
+
+#: farmConnect/views.py:337 farmConnect/views.py:501
+#, fuzzy
+#| msgid "Produce Category"
+msgid "Prodcue Category not available"
+msgstr "விளைபொருட்களின் வகை"
+
+#: farmConnect/views.py:371
+msgid "Produce added successfully"
+msgstr "விளைபொரு வெற்றிகரமாக சேர்க்கப்பட்டது தயாரிக்க"
+
+#: farmConnect/views.py:435
+msgid "demand created"
+msgstr "தேவை உருவாக்கப்பட்டது"
+
+#: farmConnect/views.py:440
+msgid " Encountered while creating a demand for the produce"
+msgstr "உற்பத்திகளுக்கு தேவையை உருவாக்குவது எதிர்கொண்டது"
+
+#: farmConnect/views.py:462
+#, fuzzy
+#| msgid "failed to fetch user information"
+msgid "failed to fetch demands"
+msgstr "உறுதிப்படுத்தல்"
+
+#: farmConnect/views.py:506
+msgid "Prodcue not available for given category"
+msgstr "கொடுக்கப்பட்ட விளைபொரு வகை கிடைக்கவில்லை"
+
+#: farmConnect/views.py:526
+#, fuzzy
+#| msgid "failed to fetch user information"
+msgid "failed to perform search"
+msgstr "உறுதிப்படுத்தல்"
+
+#: farmConnect/views.py:543 farmConnect/views.py:728
+msgid "Demand not available"
+msgstr "தேவை இல்லை"
+
+#: farmConnect/views.py:549
+msgid "Bids present for existing bid"
+msgstr "கேள்விமனுக்கள் இருக்கும் முயற்சியில் தற்போது"
+
+#: farmConnect/views.py:551
+msgid "Users can only delete the demand that they posted"
+msgstr "என்று கோரிக்கை நீக்க முடியும்"
+
+#: farmConnect/views.py:554
+msgid "demand deleted successfully"
+msgstr "தேவை, வெற்றிகரமாக நீக்கப்பட்டது"
+
+#: farmConnect/views.py:558
+msgid "error occured while deleting the demand"
+msgstr "தேவை நீக்கும் போது பிழை ஏற்பட்டது"
+
+#: farmConnect/views.py:578
+msgid "Demand not available in database"
+msgstr "தேவை தகவல் கிடைக்கவில்லை"
+
+#: farmConnect/views.py:598
+msgid "form fileds are not valid"
+msgstr "வடிவம் புலங்கள் செல்லாதது"
+
+#: farmConnect/views.py:602
+msgid "Pickup datetime should be less than the delivery datetime"
+msgstr "எடு நாள்நேரம் விநியோக நாள்நேரம் விட குறைவாக இருக்க வேண்டும்"
+
+#: farmConnect/views.py:606
+msgid ""
+"Order Confirmation datetime should be greater than the bidding end datetime"
+msgstr "ஆணை உறுதிப்படுத்தல் நாள்நேரம் ஏல முடிவில் நாள்நேரம் விட அதிகமாக இருக்க வேண்டும்"
+
+#: farmConnect/views.py:610
+msgid "Order Confirmation datetime should be lesser than the delivery datetime"
+msgstr ""
+
+#: farmConnect/views.py:620
+msgid "The Order has already been accepted. Rejecting the present bid made"
+msgstr ""
+
+#: farmConnect/views.py:630
+#, fuzzy
+#| msgid "Create  Demand"
+msgid "Bid Placed on demand"
+msgstr "கோரிக்கைகள் உருவாக்கு"
+
+#: farmConnect/views.py:637
+msgid " Encountered while creating a bid for the demand"
+msgstr ""
+
+#: farmConnect/views.py:659 farmConnect/views.py:678
+msgid " Encountered while fetching bids"
+msgstr ""
+
+#: farmConnect/views.py:697 farmConnect/views.py:753 farmConnect/views.py:789
+msgid "Bid not available"
+msgstr ""
+
+#: farmConnect/views.py:702
+msgid ""
+"Bids has already been accepted. Please go and delete the order if you wish "
+"to cancel the order"
+msgstr ""
+
+#: farmConnect/views.py:707
+msgid "Users can only delete the Bid that they posted"
+msgstr ""
+
+#: farmConnect/views.py:710
+msgid "Bid deleted successfully"
+msgstr ""
+
+#: farmConnect/views.py:715
+msgid " Encountered while deleting the bid"
+msgstr ""
+
+#: farmConnect/views.py:734
+msgid " Encountered while fetching bids for the demand"
+msgstr ""
+
+#: farmConnect/views.py:746
+msgid "Action not allowed for User Type"
+msgstr ""
+
+#: farmConnect/views.py:761 farmConnect/views.py:802
+msgid "Your Bid for the demand "
+msgstr ""
+
+#: farmConnect/views.py:761 farmConnect/views.py:802
+#, fuzzy
+#| msgid "Quantity"
+msgid " of quantity "
+msgstr "அளவு"
+
+#: farmConnect/views.py:761
+msgid " has been rejected "
+msgstr ""
+
+#: farmConnect/views.py:766
+msgid "Bid has been rejected"
+msgstr ""
+
+#: farmConnect/views.py:768
+msgid "Occured while rejecting the bid"
+msgstr ""
+
+#: farmConnect/views.py:796
+msgid "Bid has been accepted"
+msgstr ""
+
+#: farmConnect/views.py:798
+msgid "All other bids have been rejected"
+msgstr ""
+
+#: farmConnect/views.py:802
+msgid " has been accepted. To view the order click on the link : "
+msgstr ""
+
+#: farmConnect/views.py:803
+msgid "Order has been placed"
+msgstr ""
+
+#: farmConnect/views.py:806
+msgid "Occured while accepting the order"
+msgstr ""
+
+#: farmConnect/views.py:827
+msgid "Order not available"
+msgstr ""
+
+#: farmConnect/views.py:832
+msgid "Users can only delete the Order that they have"
+msgstr ""
+
+#: farmConnect/views.py:843
+msgid "Order has been deleted. The accepted bid has been cancelled"
+msgstr ""
+
+#: farmConnect/views.py:852
+msgid "Occured while deleting the order"
+msgstr ""
+
+#: farmConnect/views.py:870 farmConnect/views.py:889
+msgid "Occured while fetching the orders"
+msgstr ""
+
+#~ msgid "City"
+#~ msgstr "நகரம்"
+
+#~ msgid "quantity should be a number and greater than zero"
+#~ msgstr "அளவு ஒரு எண் மற்றும் சுழியை விட பெரியதாக இருக்க வேண்டும்"
+
+#~ msgid "price should be a number and greater than zero"
+#~ msgstr "விலை ஒரு எண் மற்றும் சுழியை விட பெரியதாக இருக்க வேண்டும்"
+
+#~ msgid "Home"
+#~ msgstr "முகப்பு"
+
+#~ msgid "Logout"
+#~ msgstr "வெளியேறு"
+
+#~ msgid "Place"
+#~ msgstr "இடம்"

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block media%}
+{{ form.media }}
+{% endblock %}
+{%block content%}
+{% load i18n %}
+<div class="container">
+	
+	<div class="row">
+		<div class="modal-body">
+
+			<div>
+				{% trans 'Produce Category' %}	
+				<input id="produce_category" name="produce_category" type="text" value="{{demand.produce.category.name}}" disabled/>
+			</div>
+			<div>
+				{% trans 'Produce Name' %}	
+				<input id="produce_name" name="produce_name" type="text" value="{{demand.produce.name}}" disabled/>
+
+			</div>
+			
+				<div>{% trans 'Quantity' %}	<input id="id_quantity" maxlength="4" name="quantity" value="{{demand.quantity}}" disabled/></div>
+				<div>{% trans 'Price' %} <input id="id_price" maxlength="15" name="price" value="{{demand.price}}" disabled/></div>
+				<div>{% trans 'Delivery Date & Time' %} <input id="id_price" maxlength="15" name="price" value="{{demand.delivery_datetime}}" disabled/></div>
+				<div>{% trans 'Bids End at Date & Time' %} <input id="id_price" maxlength="15" name="price" value="{{demand.bid_end_datetime}}" disabled/></div>
+				<form enctype="multipart/form-data" method="post" class ="wall-lg" method="post" action="{% url 'create_bid' demand.id %}">
+				<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-8 col-lg-6 row">{% trans 'Pickup Date & Time' %}{{form.pickup_datetime}}<h4 class="text-danger" style="color: red">{{form.pickup_datetime.errors}}</h4></div>
+				</div>
+				<div class="row">
+				<div class="row col-xs-12 col-sm-12 col-md-8 col-lg-6 row">{% trans 'Order Confirmation Date & Time' %}{{form.confirmation_datetime}}<h4 class="text-danger" style="color: red">{{form.confirmation_datetime.errors}}</h4></div></div>
+				<input class="btn btn-primary" type="submit" value="{% trans 'Place Bid' %}" />
+				{% csrf_token %}
+			</form>
+		</div>
+	</div>
+</div>
+{% endblock %}

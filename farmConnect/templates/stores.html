@@ -1,0 +1,79 @@
+{% extends "account.html" %}
+{% load i18n %}
+{% block accountpage %}
+
+{% for store in stores %}
+<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+	<div class="panel panel-default"  data-toggle="modal" data-target="#add_store">
+		<div class="panel-body panel_image text-center items">
+			{{store.name}}</div>
+			<div class="panel-footer text-center" style = "font-size:"></div>
+		</div>		
+	</div>
+	{% endfor %}
+	<div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 category_items">			
+		<div id="addStore"class="panel panel-default" data-toggle="modal" data-target="#add_store">
+			<div class="panel-body panel_image text-center items"><span class="glyphicon glyphicon-plus"></div>
+			<div class="panel-footer text-center" style = "font-size:">{% trans 'Add a Store' %}</div>
+		</div>
+	</div>
+	{% if view == 'errors' %}
+	<script>
+		document.getElementById("addStore").click()
+	</script>
+	{% endif %}
+	<div class="modal fade" id="add_store" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h4 class="modal-title text-center">{% trans 'Add a Store' %} </h4>
+				</div>
+				<div class="modal-body">
+					<div class="form-group">
+						<form enctype="multipart/form-data" method="post" class ="wall-lg" method="post" action="{% url 'stores' %}">
+
+							{{ storeForm.name }}
+							<h4 class="text-danger" style="color: red">{{ storeForm.name.errors }}</h4>
+
+							{{ addressForm.door_no }}
+
+							<h4 class="text-danger" style="color: red">{{ addressForm.door_no.errors }}</h4>
+
+							{{ addressForm.street }}
+
+							<h4 class="text-danger" style="color: red">{{ addressForm.street.errors }}</h4>
+
+							{{ addressForm.village }}
+
+							<h4 class="text-danger" style="color: red">{{ addressForm.village.errors }}</h4>
+
+							{{ addressForm.town }}
+
+							<h4 class="text-danger" style="color: red">{{ addressForm.town.errors }}</h4>
+
+							{{ addressForm.city }}
+
+							<h4 class="text-danger" style="color: red">{{ addressForm.city.errors }}</h4>
+
+							{{ addressForm.state }}
+
+							<h4 class="text-danger" style="color: red">{{ addressForm.state.errors }}</h4>
+
+							{{ addressForm.pincode }}
+
+							<h4 class="text-danger" style="color: red">{{ addressForm.pincode.errors }}</h4>
+
+							<input class="btn btn-primary" type="submit" value="{% trans 'Add' %}" />
+							{% csrf_token %}
+
+						</form>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">{% trans 'Close' %}</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endblock %}

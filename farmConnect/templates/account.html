@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+{%block content%}
+<div class="row">
+	<div id = "account_menu" class="col-xs-12 col-lg-2 col-md-2 col-sm-2">
+		<ul class="account_menu">
+			
+			<li><a href="{% url 'address' %}">{% trans 'Address' %}</a></li>
+			<li><a href="{% url 'profile' %}">{% trans 'Profile' %}</a></li>
+		</ul>
+	</div>
+	<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 ">
+	{% block accountpage%}
+	{% endblock %}
+	</div>
+</div>
+{% endblock %}

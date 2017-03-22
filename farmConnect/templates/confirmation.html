@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+{% load i18n %}
+<head>
+	<meta charset="utf-8">
+	<title>{% trans 'Farm Connect -- Confirmation needed' %}</title>
+</head>
+
+<body>
+	<p>
+		{% trans 'A confirmation SMS has been sent to' %} {{phone_number}}{% trans '. Please click the link in the SMS to confirm your phone number and complete your registation for your Farm Connect Account.' %}
+	</p>
+</body>
+</html>
